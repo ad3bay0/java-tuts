@@ -12,7 +12,6 @@ public class Main {
         .setId(1)
         .setName("adebayo")
         .setMajor("hnd")
-        .setMobileNumber("0399304004")
         .build();
         System.out.println(std.getName());
     }
