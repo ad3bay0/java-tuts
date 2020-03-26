@@ -53,14 +53,33 @@ public class OpTask {
 
     }
 
-    /**
-     * generate n number of integer
-     * @param n
-     * @return
-     */
+   /**
+    * 
+    * @param size
+    * @param rangeBegining
+    * @param rangeEnding
+    * @return array of integers 
+    */
     public static int[] generateNnumberOfIntegerArray(int size,int rangeBegining,int rangeEnding){
 
         return new Random().ints(size,rangeBegining,rangeEnding).toArray();
 
+    }
+
+    public static int solution(int[] A){
+
+        int ans = 20;
+
+        System.out.println("test case: "+20);
+        for(int i = 1;i<A.length;i++){
+            
+            if(ans > A[i]){
+
+                ans = A[i];
+            }
+
+        }
+
+        return ans;
     }
 }

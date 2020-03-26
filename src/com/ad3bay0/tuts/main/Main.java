@@ -17,6 +17,8 @@ public class Main {
         testParsebyValye();
         testSubstringBuilder("tester");
         testRandomIntegerArrayBySize(10,1,5);
+
+        testSolution();
         
     }
 
@@ -53,6 +55,18 @@ public class Main {
       
     }
 
+    static void testSolution(){
+
+
+        int[] numbers = OpTask.
+        generateNnumberOfIntegerArray(4, 1, 40);
+
+        System.out.println(Arrays.toString(numbers));
+        int result = OpTask
+        .solution(numbers);
+        System.out.println("result: "+result);
+    }
     
+   
     
 }
