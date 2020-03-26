@@ -2,6 +2,7 @@ package com.ad3bay0.tuts.tasks;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * OpTask
@@ -49,6 +50,17 @@ public class OpTask {
             }
 
         }
+
+    }
+
+    /**
+     * generate n number of integer
+     * @param n
+     * @return
+     */
+    public static int[] generateNnumberOfIntegerArray(int size,int rangeBegining,int rangeEnding){
+
+        return new Random().ints(size,rangeBegining,rangeEnding).toArray();
 
     }
 }

@@ -1,5 +1,9 @@
 package com.ad3bay0.tuts.main;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import com.ad3bay0.tuts.builderpattern.Student;
 import com.ad3bay0.tuts.tasks.OpTask;
 
@@ -12,6 +16,7 @@ public class Main {
         testBuilderPattern();
         testParsebyValye();
         testSubstringBuilder("tester");
+        testRandomIntegerArrayBySize(10,1,5);
         
     }
 
@@ -39,8 +44,14 @@ public class Main {
         .build();
         System.out.println(std.getName());
     }
-
  
+    static void  testRandomIntegerArrayBySize(int size,int from,int to){
+
+      List<Integer> listOfInt =  Arrays.stream(OpTask.generateNnumberOfIntegerArray(size,from,to)).boxed().collect(Collectors.toList());
+
+      listOfInt.forEach(e->System.out.println(e));
+      
+    }
 
     
     
