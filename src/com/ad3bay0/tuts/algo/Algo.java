@@ -163,20 +163,17 @@ public class Algo {
     public int solution(String s){
 
         
-        int sLenght = s.length();  
-        int numOfCharacters = sLenght/DEFAULT_PART;  
-        String[] splitArray = new String [DEFAULT_PART];
-        int tempStore;   
-       
-        if(sLenght % DEFAULT_PART != 0) {  
-          return 0;
-        }  
-
-        else {  
-            for(int i = 0; i < sLenght; i = i+numOfCharacters) {  
-              
-            }    
-        }  
+        int count[] = new int[26]; 
+  
+        for (int i = 0; i < s.length(); i++) 
+            count[s.charAt(i) - 'a']++;  
+            count[s.charAt(0) - 'a'] = 1; 
+      
         
-    }
+        int ways = 1; 
+        for (int i = 0; i < 26; ++i) 
+            if (count[i] != 0) 
+                ways *= count[i]; 
+      
+        return ways; 
 }
