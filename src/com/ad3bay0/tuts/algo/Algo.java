@@ -9,6 +9,8 @@ import java.util.Set;
 
 public class Algo {
 
+    private static final int DEFAULT_PART= 3;
+
     public static void main(String[] args) {
 
         // int[] nums = { 1, 2, 3, 4, 5, 6 };
@@ -154,5 +156,27 @@ public class Algo {
 
         return pair;
 
+    }
+
+
+
+    public int solution(String s){
+
+        
+        int sLenght = s.length();  
+        int numOfCharacters = sLenght/DEFAULT_PART;  
+        String[] splitArray = new String [DEFAULT_PART];
+        int tempStore;   
+       
+        if(sLenght % DEFAULT_PART != 0) {  
+          return 0;
+        }  
+
+        else {  
+            for(int i = 0; i < sLenght; i = i+numOfCharacters) {  
+              
+            }    
+        }  
+        
     }
 }
