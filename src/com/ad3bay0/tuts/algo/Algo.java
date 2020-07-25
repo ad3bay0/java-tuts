@@ -1,5 +1,6 @@
 package com.ad3bay0.tuts.algo;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -68,13 +69,9 @@ public class Algo {
         System.out.println("dirty pile: "+Arrays.toString(dirtyPile));
 
         for (int cleanSock : cleanPile) {
-
-           
-
             if(!unpairedCleanSocks.remove(cleanSock)){
                 System.out.println("cleanSock added to unpair: "+cleanSock);
                 unpairedCleanSocks.add(cleanSock);
-
             }else{
 
                 pair += 1;
@@ -162,18 +159,25 @@ public class Algo {
 
     public int solution(String s){
 
+        List m =  new ArrayList<>();
+
         
         int count[] = new int[26]; 
   
-        for (int i = 0; i < s.length(); i++) 
+        for (int i = 0; i < s.length(); i++) {
+
             count[s.charAt(i) - 'a']++;  
+        }
+           
             count[s.charAt(0) - 'a'] = 1; 
       
         
         int ways = 1; 
-        for (int i = 0; i < 26; ++i) 
-            if (count[i] != 0) 
-                ways *= count[i]; 
+        for (int i = 0; i < 26; ++i){
+            if (count[i] != 0)
+             ways *= count[i]; 
+        }
+            
       
-        return ways; 
+        return ways; }
 }
