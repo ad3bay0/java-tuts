@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Adebayo.Adeniyan.GLOBALACCELEREX\\Downloads\\jackson-core-2.12.3.jar",
+        "c:\\Users\\Adebayo.Adeniyan.GLOBALACCELEREX\\Downloads\\jackson-databind-2.12.3.jar",
+        "c:\\Users\\Adebayo.Adeniyan.GLOBALACCELEREX\\Downloads\\jackson-annotations-2.12.3.jar"
+    ]
+}

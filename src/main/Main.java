@@ -1,4 +1,4 @@
-package com.ad3bay0.tuts.main;
+package main;
 
 import java.util.Arrays;
 import java.util.List;
