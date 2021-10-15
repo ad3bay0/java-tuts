@@ -14,14 +14,35 @@ public class Algo {
 
     public static void main(String[] args) {
 
+
+
         // int[] nums = { 1, 2, 3, 4, 5, 6 };
         // sumInAnArray(nums, 9);
 
-        solution(10, new int[] { 1, 2, 1, 1 }, new int[] { 1, 4, 3, 2, 4 });
+        //solution(10, new int[] { 1, 2, 1, 1 }, new int[] { 1, 4, 3, 2, 4 });
         // System.out.println(maximumPair(10, new int[]{1,2,1,1,3}, new
         // int[]{1,4,3,2,4}));
 
+        //System.out.println(isHex("e6a67708f3fc97402dcf24a45a4ff20b9ebea683747b98ca2afe9812e8cb6e7e"));
+System.out.println(1000 * 60 * 15);
+
     }
+
+
+    private static boolean isHex(String hex) {
+        if ( hex.length() == 0 || 
+             (hex.charAt(0) != '-' && Character.digit(hex.charAt(0), 16) == -1))
+            return false;
+        if ( hex.length() == 1 && hex.charAt(0) == '-' )
+            return false;
+    
+        for ( int i = 1 ; i < hex.length() ; i++ )
+            if ( Character.digit(hex.charAt(i), 16) == -1 )
+                return false;
+        return true;
+    }
+
+
 
     /*
      * 
