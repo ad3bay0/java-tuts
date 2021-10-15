@@ -9,6 +9,13 @@ public class Test {
 
    public static void main(String[] args) {
 
+     String test = "503 Service Temporarily Unavailable";
+
+     System.out.println(test.contains("503 Service Temporarily Unavailable"));
+     
+
+
+
       System.out.println(reverseArray(Arrays.asList(1,2,3,4,5)).toString());
   }
 
