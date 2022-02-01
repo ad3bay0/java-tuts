@@ -10,8 +10,6 @@ import java.util.Set;
 
 public class Algo {
 
-    private static final int DEFAULT_PART= 3;
-
     public static void main(String[] args) {
 
 
